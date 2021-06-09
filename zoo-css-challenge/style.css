@@ -1,12 +1,21 @@
 * {
   font-family: sans-serif;
+  margin:10px;
+}
+
+body{
+  background-color: rgb(224, 221, 221);
 }
 
 header {
-  background-color: #211a1d;
-  color: #ffffff;
+  background-image:url("https://conservewildcats.org/wp-content/uploads/sites/5/2017/02/panthera_Header-1.jpg");
+  color: #f7f899;
   width: 100%;
   padding: 20px;
+}
+
+#logo{
+  border-style:none;
 }
 
 nav {
@@ -26,12 +35,18 @@ header ul li {
 
 section {
   padding: 5%;
-  background-color: #f8f0fb;
+  background-color: white;
+}
+p{
+   word-spacing: 5px;
+  line-height: 1.8;
+ 
 }
 
 img {
   border: 5px solid #8075ff;
 }
+
 
 h1,
 h2,
@@ -55,6 +70,10 @@ h3 {
   font-size: 150%;
 }
 
+a:hover{
+    color: #f80808;
+}
+
 button {
   display: inline-block;
   border-radius: 3px;
@@ -67,16 +86,15 @@ button {
 }
 
 footer {
-  background-color: #211a1d;
-  color: #ffffff;
+  background-image:url("https://www.tierpark-berlin.de/fileadmin/_processed_/1/4/csm_RZ_TPB_Zuarbeit_Webseite_Header_150121_f12eda5bbf.jpg");
+  color: #f7f899;;
   width: 100%;
   padding: 20px;
   display: flex;
   justify-content: space-between;
 }
 
-.introduction {
-}
+
 
 #badge {
   height: 120px;
@@ -85,45 +103,75 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
-
   display: flex;
-  justify-content: center;
+  justify-content:center;
   align-content: center;
   flex-direction: column;
+ 
 }
 
 #badge:hover {
-  background-color: yellow;
+  opacity: 1;
+  transition-duration: 1000ms ;
+  transition-timing-function: ease-in-out;
+  color:green;
+   background-color: yellow;
 }
 
 #badge p {
   text-align: center;
   font-size: 125%;
+   word-spacing: 5px;
+  line-height: 1.5;
+  text-indent: 10px;
 }
 
-.image-container img {
+.image-container img.one {
+  vertical-align:top;
+  border: 5px solid blue;
+}
+.image-container img.Tow {
   vertical-align: top;
-  border: 5px solid #747c92;
+  border: 5px solid red;
+}
+.image-container img.Three {
+  vertical-align: top;
+  border: 5px solid green;
 }
 
 .image-container img:first-of-type {
-  vertical-align: bottom;
+  vertical-align: top;
 }
 
 .tigers {
   background-color: #0b3c49;
   color: #f0e100;
 }
-
-.giraffe {
-  background-color: #465775;
-  color: #56e39f;
+.tigers h2 {
+  color:#FFB6C1;
 }
 
-.giraffe h2 {
-  color: #ef6f6c;
+.giraffe {
+  background-color: #483C46;
+  color: #BEEE62;
+}
+
+.giraffe h2,h3 {
+  color: #F4743B;
+}
+
+.flamingo{
+    background-color: #f5c296;
+}
+.flamingo h2 {color: #913cf3;}
+.flamingo-img{
+    
+  vertical-align:middle;
+  border: 5px solid rgb(226, 129, 3);
+  border-radius:20%;
+  margin: 30px;
 }
 
 .card {
@@ -135,7 +183,9 @@ footer {
   border: 1px solid black;
   border-radius: 10px;
 }
-
+.news h2{
+   text-align: center;
+}
 .card h4 {
   margin-bottom: 1em;
 }
@@ -166,6 +216,7 @@ footer {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  border-radius:50px;
 }
 
 .education-container h3,
@@ -173,11 +224,24 @@ footer {
   margin-bottom: 1em;
 }
 
+.education-container button{
+  font-size:20px;
+}
+.education-container button:hover{
+  background-color:red;
+}
+.education-container button:focus{
+  background-color:green;
+}
 /*Membership*/
 
 .membership {
   text-align: center;
   background-color: #fffffc;
+}
+.membership p{
+  width:700px;
+  margin:auto;
 }
 
 .membership h2 {
@@ -193,3 +257,8 @@ footer {
 .programs .card {
   display: block;
 }
+
+.flex-container {
+  display: flex;
+}
+
